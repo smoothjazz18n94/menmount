@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Men Mount is a personal webpage about masculinity, growth, confidence, and purpose — inspiring men to rise to their best selves.">
+    <title>Men Mount | A Journey into Modern Masculinity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- 🌟 Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 🏔️ Header / Hero Section -->
+    <header id="home">
+      <h1>Welcome to <span class="highlight">Men Mount</span> ⛰️</h1>
+      <p class="tagline">Exploring masculinity with strength, confidence, and purpose.</p>
+      <figure>
+        <img src="mountain-men.jpg" alt="Man standing proudly on a mountain peak" width="400">
+        <figcaption>Every climb begins with the first step — rise to your best self.</figcaption>
+      </figure>
+    </header>
+
+    <!-- 💪 About Section -->
+    <main>
+      <section id="about">
+        <h2>About Men Mount</h2>
+        <p>
+          Men Mount is a space to explore what it means to be a man in today’s world.
+          Here, masculinity is not about dominance — it’s about self-mastery, discipline, courage,
+          and compassion. This page is dedicated to every man climbing his own mountain,
+          one step at a time.
+        </p>
+      </section>
+
+      <!-- 🗞️ Blog / Articles Section -->
+      <section id="blog">
+        <h2>Latest Posts</h2>
+        <div class="blog-container">
+          <article class="blog-card">
+            <h3>The Strength in Stillness</h3>
+            <p>True power often comes not from action, but from patience and calm.</p>
+            <a href="#" target="_blank">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <h3>Building Daily Discipline</h3>
+            <p>How small, consistent actions shape who we become.</p>
+            <a href="#" target="_blank">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <h3>The Modern Man’s Purpose</h3>
+            <p>Finding meaning beyond material success and social expectations.</p>
+            <a href="#" target="_blank">Read More</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 📬 Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Have thoughts or want to connect? Reach out below:</p>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea><br><br>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ⚓ Footer -->
+    <footer>
+      <p>© 2025 Men Mount | Built by Magastier 💪</p>
+      <p><a href="https://www.freecodecamp.org/learn" target="_blank">Learn to Code at freeCodeCamp</a></p>
+    </footer>
+  </body>
+</html>
