@@ -1,185 +1,85 @@
+/* Base Page */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
-  color: #222;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1528756514091-dee5ecaa3278?auto=format&fit=crop&w=1600&q=80') center/cover fixed no-repeat;
 }
 
-header {
-  background-color: #1e2a38;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 1rem;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav a {
-  color: #ffd700;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 2rem;
-  background-color: white;
-  margin: 1rem auto;
-  max-width: 800px;
-  border-radius: 10px;
-}
-
-footer {
-  text-align: center;
-  background-color: #1e2a38;
-  color: white;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
 /* Hero Section */
-.hero {
-  background-image: url('https://images.unsplash.com/phttps://images.unsplash.com/photo-1528756514091-dee5ecaa3278?auto=format&fit=crop&w=1200&q=80photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
-  color: white;
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 6rem 1rem;
-  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #ddd;
 }
 
 .hero-btn {
-  background-color: #ffd700;
-  color: #1e2a38;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid #ffd700;
+  color: #ffd700;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.hero-btn:hover {
+  background: #ffd700;
+  color: #000;
 }
 
-.hero-btn:hover {
-  background-color: #e6c200;
-}
-/* Featured Topics Section */
-.topics {
-  background-color: #f4f4f4;
+/* About Section */
+#about {
+  background: rgba(0, 0, 0, 0.7);
   padding: 3rem 1rem;
   text-align: center;
+  max-width: 900px;
+  margin: 3rem auto;
+  border-radius: 12px;
 }
 
-.topics h2 {
-  color: #1e2a38;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.topic-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card h3 {
-  color: #1e2a38;
-  margin: 1rem 0 0.5rem;
-}
-
-.card p {
-  padding: 0 1rem 1.5rem;
-  color: #333;
-  font-size: 1rem;
-}
+/* Wisdom Wall */
 #wisdom-wall {
-  background-color: #111;
-  color: #f0f0f0;
-  text-align: center;
-  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 3rem 1rem;
   border-radius: 12px;
   margin: 2rem auto;
-  max-width: 800px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 #wisdom-wall h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-  color: #e0c97f;
-}
-
-#wisdom-wall figure {
-  margin: 2rem 0;
+  color: #ffd700;
+  margin-bottom: 2rem;
 }
 
 #wisdom-wall blockquote {
-  font-size: 1.2rem;
   font-style: italic;
-  margin: 0;
+  font-size: 1.3rem;
+  margin: 1rem auto;
+  max-width: 700px;
 }
 
 #wisdom-wall figcaption {
   margin-top: 0.5rem;
   font-weight: bold;
-  color: #d4af37;
+  color: #ffd700;
 }
